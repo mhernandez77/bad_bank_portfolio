@@ -1,56 +1,52 @@
 function Deposit(){
-  const [amount, setAmount]       = React.useState('');
+    const [show, setShow]         = React.useState(true);
+    const [status, setStatus]     = React.useState('');
+    const [deposit, setDeposit] = React.useState(true);
     const ctx = React.useContext(UserContext);
 
-    function validate (fieldName, fieldValue) {
-
-    var z1 = [0 - 9];
-    {
-      if (!z1.test ( fieldValue )) {
-        alert ( 'Please provide a valid Enrollment Number' );
-        return false;
-      }
+    function validateDeposit(field, label, deposit){
+        let number = [1-9]
+        if (!number) {
+            alert('Error: enter valid amount to deposit' + label);
+            setTimeout(() => setStatus(''),3000);
+            return false;
+        }
+        return true;
     }
-  }
+    validateDeposit()
+    function handleCreate(){
+        console.log(deposit);
+        ctx.users.push({deposit,balance:100});
+        setShow(false);
+    }
+    function clearForm(){
+        setDeposit('')
+        setShow(true);
+    }
 
-  function myFunction() {
-    alert("Error: Not a number. Please enter a valid amount.");
-  }
-  myFunction();
-
-
-    let status = `Account Balance $ ${totalState} `;
-
-  // const ATMDeposit = ({ onChange, isDeposit }) => {
-  //   const choice = ["Deposit", "Cash Back"];
-  //   console.log(`ATM isDeposit: ${isDeposit}`);
-  //   return (
-  //       <label className="label huge">
-  //         <h3> {choice[Number(!isDeposit)]}</h3>
-  //         <input type="number" width="200" onChange={onChange}></input>
-  //         <input type="submit" width="200" value="Submit"></input>
-  //       </label>
-  //   );
-  // };
-  return (
-    <h1>Deposit</h1>
-  <Card
-      bgcolor="primary"
-      header="Deposit Money"
-      status={status}
-      body={show ? (
-          <>
-            <br>Deposit<br/>
-            <input type="number" className="form-control" id="deposit" placeholder="Enter deposit amount" value={number} onChange={e => setAmount(e.currentTarget.value)}/><br/>
-            <button type="submit" className="btn btn-light" onClick={handleCreate}>Create Account</button>
-          </>
-      ):(
-          <>
-            <h5>Success</h5>
-            <button type="submit" className="btn btn-light" onClick={clearForm}>Add another account</button>
-          </>
-      )}
-  />
-)
-  )
+    return (
+        <Card
+            bgcolor="primary"
+            header="Deposit Money"
+            status={status}
+            body={show ? (
+                <>
+                    Deposit<br/>
+                    <input type="input"
+                           className="form-control"
+                           id="deposit"
+                           placeholder="Enter amount"
+                           value={deposit}
+                           onChange={e => setName(e.currentTarget.value)} />
+                    <button onClick={handleCreate}>Deposit</button>
+                    <br/>
+                </>
+            ):(
+                <>
+                    <h5>Success</h5>
+                    <button type="submit" className="btn btn-light" onClick={clearForm}>Add another account</button>
+                </>
+            )}
+        />
+    )
 }
