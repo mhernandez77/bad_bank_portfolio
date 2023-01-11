@@ -22,6 +22,10 @@ Contributors names and contact info
 Maleni Hernandez
 Twitter: @_malenixo
 
+
+my GIF
+https://github.com/mhernandez77/bad_bank_portfolio/commit/499004600cfe12bfd51ca97a3a6e755c35f04442
+
 ## Version History
 
 * 0.2
