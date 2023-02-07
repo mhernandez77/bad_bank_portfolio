@@ -14,12 +14,6 @@ This project works with MERN stack, which is Mongodb, Express, React, and Node.j
 
 You can download the project files to your local environment and save in a new directory. Use a IDE text editor like VS Code, and open a new terminal to type 'npm install' to install the project dependancies. Once the dependencies are installed, you should see a directory labelled node_modules in the project directory. Next in the server, run "npm install". With this command, the port specified will be given and the project will start running on the port.
 
-## Contributors names and contact info
-
-* Maleni Hernandez
-LinkedIn: https://www.linkedin.com/in/maleni-hernandez-546180169
-Twitter: @_malenixo
-
 ## Features
 * Front end modifications
 * A Node.js server 
@@ -34,7 +28,11 @@ Twitter: @_malenixo
 #my GIF
 ![](https://github.com/mhernandez77/badbank_three_tier/blob/main/Animation.gif)
 
+## Contributors names and contact info
 
+* Maleni Hernandez
+LinkedIn: https://www.linkedin.com/in/maleni-hernandez-546180169
+Twitter: @_malenixo
 ## License
 
 Copyright (c) 2022 Maleni Hernandez Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
