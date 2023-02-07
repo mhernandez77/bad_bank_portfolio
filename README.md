@@ -1,13 +1,10 @@
 # bad_bank
 
-<<<<<<< HEAD
-Copyright (c) 2022 Maleni Hernandez Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-=======
 Bad bank is an application with basic features of creating an account, depositing money, and withdrawing money. 
 
 ## Description
 
-My application is built with React and bootsrap styles with a navbar for User Interface. Component files are built with JS, so the archetechure of the files are building worked on.  
+My application is built with React and bootsrap styles with a navbar for User Interface. Component files are built with JS, so the archetechure of the files are building worked on. With the refactored version, JS, HTML, and CSS will be used with middleswares and databases to keep users signed in with the basic badbank functionalities. 
 
 ## Getting Started
 
@@ -23,11 +20,23 @@ This project will work with MongoDB for back-end integration
 Contributors names and contact info
 
 Maleni Hernandez
+LinkedIn: https://www.linkedin.com/in/maleni-hernandez-546180169
 Twitter: @_malenixo
+
+##Features
+*Front end modifications
+*A Node.js server 
+*A MongoDB database and data abstraction layer
+*API integration
+*Connection of the front end and back end
+*Authentication 
+*The application deployed to a cloud service of your choice
+*Development of additional features, which will be evaluated in your presentation
 
 
 #my GIF
 ![](https://github.com/mhernandez77/bad_bank_portfolio/blob/main/Animation.gif)
+
 
 ## Version History
 
@@ -41,4 +50,4 @@ Twitter: @_malenixo
 Copyright (c) 2022 Maleni Hernandez Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Acknowledgments
->>>>>>> 3e532e564c9afd2da9bac915f6cf3c92396f2f31
+
