@@ -17,21 +17,21 @@ This project will work with MongoDB for back-end integration
 
 ## Authors
 
-Contributors names and contact info
+# Contributors names and contact info
 
-Maleni Hernandez
+* Maleni Hernandez
 LinkedIn: https://www.linkedin.com/in/maleni-hernandez-546180169
 Twitter: @_malenixo
 
-##Features
-*Front end modifications
-*A Node.js server 
-*A MongoDB database and data abstraction layer
-*API integration
-*Connection of the front end and back end
-*Authentication 
-*The application deployed to a cloud service of your choice
-*Development of additional features, which will be evaluated in your presentation
+## Features
+* Front end modifications
+* A Node.js server 
+* A MongoDB database and data abstraction layer
+* API integration
+* Connection of the front end and back end
+* Authentication 
+* The application deployed to a cloud service of your choice
+* Development of additional features, which will be evaluated in your presentation
 
 
 #my GIF
