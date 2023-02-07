@@ -8,12 +8,9 @@ My application is built with React and bootsrap styles with a navbar for User In
 
 ## Getting Started
 
-This project will work with MongoDB for back-end integration
+This project works with MERN stack, which is Mongodb, Express, React, and Node.js.
 
 ### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
 
 You can download the project files to your local environment and save in a new directory. Use a IDE text editor like VS Code, and open a new terminal to type 'npm install' to install the project dependancies. Once the dependencies are installed, you should see a directory labelled node_modules in the project directory. Next in the server, run "npm install". With this command, the port specified will be given and the project will start running on the port.
 
@@ -37,13 +34,6 @@ Twitter: @_malenixo
 #my GIF
 ![](https://github.com/mhernandez77/bad_bank_portfolio/blob/main/Animation.gif)
 
-
-## Version History
-
-* 0.2
-
-* 0.1
-    * Initial Release
 
 ## License
 
