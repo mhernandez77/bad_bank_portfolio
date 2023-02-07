@@ -5,19 +5,19 @@ function Deposit(){
     const ctx = React.useContext(UserContext);
 
     function validateDeposit(field, label, deposit){
-        let number = [1-9]
+        let number = [0-9]
         if (!number) {
-            alert('Error: enter valid amount to deposit' + label);
-            setTimeout(() => setStatus(''),3000);
+            setStatus(
+                "Your deposit could not be completed. Please enter a valid, positive number."
+            );
             return false;
         }
         return true;
     }
-    validateDeposit()
 
     function handleCreate(){
         console.log(deposit);
-        ctx.users.push({deposit,balance:100});
+        ctx.users.push({deposit,balance:1000});
         setShow(false);
     }
     function clearForm(){
@@ -28,6 +28,7 @@ function Deposit(){
     return (
         <Card
             bgcolor="primary"
+            class="card border-info mb-3"
             header="Deposit Money"
             status={status}
             body={show ? (
@@ -38,8 +39,13 @@ function Deposit(){
                            id="deposit"
                            placeholder="Enter amount"
                            value={deposit}
-                           onChange={e => setDeposit(e.currentTarget.value)} />
-                    <button onClick={handleCreate}>Deposit</button>
+                           onChange={e => setDeposit(e.currentTarget.value)} /><br/>
+                    <button
+                        type="submit"
+                        className="btn btn-light"
+                        disabled={deposit === ""}
+                        onClick={handleCreate}>Deposit
+                    </button>
                     <br/>
                 </>
             ):(

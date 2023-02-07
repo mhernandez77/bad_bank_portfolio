@@ -62,10 +62,10 @@ function Withdraw(){
                        id="withdraw"
                        placeholder="Enter amount"
                        value={withdraw}
-                       onChange={e => setWithdraw(e.currentTarget.value)} />
+                       onChange={e => setWithdraw(e.currentTarget.value)} /> <br/>
                 <button
                     type="submit"
-                    className="btn btn-outline-dark"
+                    className="btn btn-light"
                     disabled={withdraw === ""}
                     onClick={() => handleWithdraw(withdraw)}>Withdraw</button>
                 <br/>
