@@ -1,0 +1,24 @@
+{
+  "name": "bad_bank_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhernandez77/bad_bank_portfolio.git"
+  },
+  "author": "maleni.alexis@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhernandez77/bad_bank_portfolio/issues"
+  },
+  "homepage": "https://github.com/mhernandez77/bad_bank_portfolio#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^5.0.0"
+  }
+}

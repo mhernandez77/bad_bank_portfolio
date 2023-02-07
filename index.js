@@ -1,23 +1,77 @@
-function Spa() {
-  return (
-    <HashRouter>
-      <NavBar/>
-      <UserContext.Provider value={{users:[{name:'abel',email:'abel@mit.edu',password:'secret',balance:100}]}}>
-        <div className="container" style={{padding: "20px"}}>
-          <Route path="/" exact component={Home} />
-          <Route path="/CreateAccount/" component={CreateAccount} />
-          <Route path="/login/" component={Login} />
-          <Route path="/deposit/" component={Deposit} />
-          <Route path="/withdraw/" component={Withdraw} />
-          <Route path="/balance/" component={Balance} />
-          <Route path="/alldata/" component={AllData} />
-        </div>
-      </UserContext.Provider>      
-    </HashRouter>
-  );
-}
+var express = require("express");
+var app = express();
+var cors = require("cors");
 
-ReactDOM.render(
-  <Spa/>,
-  document.getElementById('root')
+require("dotenv").config();
+console.log(process.env);
+
+var dal = require("./dal.js");
+
+// Used to serve the static files from the public directory
+app.use(express.static("public"));
+app.use(cors());
+
+// Adding the route definition for creating new users (now with the database)
+app.get("/account/create/:name/:email/:password/:userID", function (req, res) {
+    dal
+        .create(
+            req.params.name,
+            req.params.email,
+            req.params.password,
+            req.params.userID
+        )
+        .then((user) => {
+            console.log(user);
+            res.send(user);
+        });
+});
+
+// Adding the route definition for getting the user info
+app.get("/account/getbalance/:userID", function (req, res) {
+    dal.getBalance(req.params.userID).then((user) => {
+        console.log(user);
+        res.send(user);
+    });
+});
+
+// Adding the route definition for updating the user balance
+app.get("/account/changebalance/:userID/:newBalance", function (req, res) {
+    dal.changeBalance(req.params.userID, req.params.newBalance).then((result) => {
+        console.log(result);
+        res.send(result);
+    });
+});
+
+// Adding the route definition for updating the user activity
+app.get(
+    "/account/changeactivity/:userID/:activityDate/:activityTime/:activityType/:activityAmount/:activityBalance",
+    function (req, res) {
+        dal
+            .updateActivity(
+                req.params.userID,
+                req.params.activityDate,
+                req.params.activityTime,
+                req.params.activityType,
+                req.params.activityAmount,
+                req.params.activityBalance
+            )
+            .then((result) => {
+                console.log(result);
+                res.send(result);
+            });
+    }
 );
+
+// Adding the route definition for returning all account data (now with the database)
+app.get("/account/all", function (req, res) {
+    dal.all().then((docs) => {
+        console.log(docs);
+        res.send(docs);
+    });
+});
+
+// Listening for the port
+var port = process.env.PORT || 5000;
+app.listen(port, function () {
+    console.log("Server is running on port: " + port);
+});
