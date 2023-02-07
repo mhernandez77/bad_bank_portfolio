@@ -15,9 +15,9 @@ This project will work with MongoDB for back-end integration
 * How/where to download your program
 * Any modifications needed to be made to files/folders
 
-## Authors
+You can download the project files to your local environment and save in a new directory. Use a IDE text editor like VS Code, and open a new terminal to type 'npm install' to install the project dependancies. Once the dependencies are installed, you should see a directory labelled node_modules in the project directory. Next in the server, run "npm install". With this command, the port specified will be given and the project will start running on the port.
 
-# Contributors names and contact info
+## Contributors names and contact info
 
 * Maleni Hernandez
 LinkedIn: https://www.linkedin.com/in/maleni-hernandez-546180169
