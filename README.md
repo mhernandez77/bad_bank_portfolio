@@ -32,7 +32,7 @@ Twitter: @_malenixo
 
 
 #my GIF
-![](https://github.com/mhernandez77/bad_bank_portfolio/blob/main/Animation.gif)
+![](https://github.com/mhernandez77/badbank_three_tier/blob/main/Animation.gif)
 
 
 ## License
