@@ -24,8 +24,6 @@ You can download the project files to your local environment and save in a new d
 * The application deployed to a cloud service of your choice
 * Development of additional features, which will be evaluated in your presentation
 
-
-#my GIF
 ![](https://github.com/mhernandez77/badbank_three_tier/blob/main/Animation.gif)
 
 ## Contributors names and contact info
